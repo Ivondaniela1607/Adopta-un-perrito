@@ -1,0 +1,387 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+ 
+ 
+}
+/* ------> Variables <------ */
+
+:root{
+
+  /* ------> Tamaño de tipografia <------ */
+  --normal: 20px;
+  --title: 30px;
+
+  /* ------> Color de tipografia <------ */
+  --grayDark-color: #212529;
+  --grayPastel-color: #495057;
+  
+
+
+
+  /* ------> Color <------ */
+  --greenDark-color: #006d77;
+  --greenPastel-color: #83c5be;
+  --greenPastelClaro-color: #edf6f9;
+  --rosaDark-color: #e29578;
+  --rosaPastel-color: #ffddd2;
+
+
+
+}
+
+
+/* ------> Acá comienza el nav <------ */
+.nav-container{
+  
+  
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  
+  display: flex;
+  align-items: center;
+}
+
+.logo p{
+  font-family: 'Architects Daughter', cursive;
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--grayDark-color);
+  
+}
+
+
+.menu{
+  display: flex;
+  align-items: center;
+}
+
+nav{
+  
+  background: var(--greenPastel-color);
+}
+
+nav ul{
+  display: flex;
+}
+
+nav li{
+  padding-left: 20px;
+  list-style: none;
+}
+
+li a{
+  font-size: var(--normal);
+  text-decoration: none;
+  color: var(--grayPastel-color);
+  font-weight: bold;
+
+}
+
+nav li a:hover{
+  color: var(--rosaPastel-color)
+}
+
+p{
+  font-family: 'Overpass', sans-serif;
+  font-size: var(--normal);
+  color: var(--grayPastel-color);
+}
+
+h1{
+  font-family: 'Chivo', sans-serif;
+  font-size: var(--title);
+  color: var(--grayDark-color);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h3{
+  color: var(--grayDark-color);
+}
+
+/* ------> Acá temrmina el nav <------ */
+
+
+/* ------> Acá comienza el hero<------ */
+
+.hero{
+  
+  background-image: linear-gradient(var(--greenPastelClaro-color), var(--rosaPastel-color));
+  
+}
+
+.hero-container{
+  
+  max-width: 90%;
+  margin: auto;
+}
+
+
+.title h1{
+  
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  
+}
+
+.title h3{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-family: 'Overpass', sans-serif;
+  font-size: var(--normal);
+  color: var(--grayPastel-color);
+}
+
+.title p{
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+.content{
+  
+  display: grid;
+  grid-template-columns: 300px 300px;
+  gap: 10px;
+  
+}
+
+.option{
+  border: 1px #006d77 solid;
+  padding: 10px;
+  margin-bottom: 100px;
+  border-radius: 20px;
+  
+}
+.option-img{
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.option p{
+  padding: 5px 10px;
+  font-size: 16px;
+}
+strong{
+  display: flex;
+  justify-content: center;
+}
+
+.option-img img{
+  width: 70%;
+  animation: 1s;
+}
+
+.main_button{
+  background-color: var(--greenDark-color);
+  width: 100%;
+  padding: 10px;
+  font-size: var(--normal);
+  color: var(--rosaPastel-color);
+  border: 0;
+ 
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+.main_button:hover{
+  background-color: var(--grayPastel-color);
+}
+
+
+/* ------> Acá termina el hero<------ */
+
+/* ------> Acá comienza la seccion de perritos<------ */
+
+.description{
+  background: var(--greenPastelClaro-color);
+  
+}
+
+.description-content{
+  
+  max-width: 90%;
+  margin: 0 auto;
+
+}
+
+.description-content p{
+  padding-top: 100px;
+}
+
+.description-content-dogs{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-bottom: 100px;
+  
+}
+.dog{
+  
+  padding-top: 100px;
+}
+
+.dog-img{
+  display: flex;
+  justify-content: center;
+}
+
+.dog-img img{
+  border: 1px var(--rosaDark-color) solid;
+  height: 180px;
+  width: 185px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+.dog h3{
+  text-align: center;
+  padding-top: 10px;
+}
+
+.description-content-dogs .dog-img img:hover{
+  transform: translateY(-15px);
+  transition: 0.5s;
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ------> Acá termina la seccion de perritos<------ */
+
+
+
+/* ------> Acá comienza la seccion de menciones<------ */
+
+
+
+
+
+.contenedor-menciones{
+  background-image: linear-gradient(var(--rosaPastel-color), var(--greenPastelClaro-color));
+}
+
+
+.menciones{
+  
+  max-width: 90%;
+  margin: auto;
+}
+
+.contenedor-menciones p{
+  padding-top: 100px;
+}
+
+.family{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
+  border: 1px var(--rosaDark-color) solid;
+  border-radius: 20px;
+}
+
+.family p{
+  font-size: 16px;
+  padding: 10px;
+}
+
+.menciones-container{
+  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.family-img {
+  
+  display: flex;
+  justify-content: center;
+}
+
+.family-img img{
+  object-fit: cover;
+  height: 180px;
+  width: auto;
+}
+
+.family:hover{
+  background-color: var(--greenPastelClaro-color);
+}
+
+
+footer{
+  height: 60px;
+  background: var(--rosaDark-color);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 65px;
+}
+
+
+
+
+/* ------> Acá termina la seccion de menciones<------ */
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px){
+ 
+
+  .menciones-container{
+    display: inherit;
+    padding: 30px;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 768px){
+  
+
+  .container{
+    display: inherit;
+  }
+
+  .description-content-dogs{
+    display: inherit;
+  }
+
+  .content{
+    display: inherit;
+  }
+
+}
+
+
+
+@media screen and (max-width: 600px){
+
+ .logo p{
+   font-size: 15px;
+ }
+
+}
